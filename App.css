@@ -1,0 +1,90 @@
+.App {
+  text-align: left;
+  background-color: rgba(99, 99, 94, 0.108);
+  
+}
+
+.header {
+  display: flex;
+  
+  border-color: rgba(60, 58, 55, 0.447);
+  border-style: inset;
+  border-width: 7px;
+  font-size: 40px;
+  margin: 10px;
+  padding: auto;
+  display: flex;
+  align-items: center; /* Align items vertically (image and buttons) */
+  justify-content: space-between; /* Space between the image and the buttons */
+  gap: 20px; /* Space between image and buttons */
+}
+
+h1{ /* header 1*/
+  color:rgb(189, 189, 188);  /* text color */
+  font-family:"Tahoma";
+  padding-right: 10px;
+  
+  
+}
+
+a{ /* link designs */
+  color:aliceblue;
+  font-size: 15px;
+  width: fit-content;
+  text-decoration: none;
+  background-color: #08090a; /* Black background color for the button */
+  padding: 10px 20px; /* Padding to give the button shape */
+  border-radius: 5px; /* Rounded corners */
+  border: 2px solid transparent; /* Border for aesthetics */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover */
+  
+}
+
+
+
+a:hover{ /*link changes color if cursor hovers over it  */
+  color:brown;
+}
+#links{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+#title{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  width:100%;
+  
+}
+
+/* Taskbar styles */
+.taskbar {
+  display: flex;
+  justify-content: space-around;
+  background-color:rgba(7, 7, 7, 0.879);
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  z-index: 10; /* Ensure it stays on top */
+}
+
+.taskbar-item {
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.taskbar-item:hover {
+  background-color:rgb(81, 19, 8);
+  border-radius: 5px;
+}
+
+
+
