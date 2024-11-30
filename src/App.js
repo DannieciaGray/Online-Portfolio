@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { Link } from 'react-router-dom';
 import Headshot from "./photos/Headshot.jpeg";
 function App() {
   return (
@@ -29,12 +30,12 @@ function App() {
       
       {/* Taskbar */}
       <div className="taskbar">
-      <div className="taskbar-item">Home</div>
-      <div className="taskbar-item">About</div>
-      <div className="taskbar-item">Projects</div>
-      <div className="taskbar-item">Contact</div>
+        <Link className="taskbar-item" to="/">Home</Link>
+        <Link className="taskbar-item" to="/about">About</Link>
+        <Link className="taskbar-item" to="/projects">Projects</Link>
+        <Link className="taskbar-item" to="/contact">Contact</Link>
 
-    </div>
+      </div>
     </div>
 
     
