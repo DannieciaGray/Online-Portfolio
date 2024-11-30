@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App'; // Main page
 import About from './About'; // About page
+import Projects from './Projects'; // Project page 
+import Contact from './Contact'; // Contact page 
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -14,6 +16,8 @@ root.render(
         {/* Define your routes */}
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   </React.StrictMode>

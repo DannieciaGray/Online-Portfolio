@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Headshot from "./photos/Headshot.jpeg";
 function App() {
   return (
@@ -30,10 +30,35 @@ function App() {
       
       {/* Taskbar */}
       <div className="taskbar">
-        <Link className="taskbar-item" to="/">Home</Link>
-        <Link className="taskbar-item" to="/about">About</Link>
-        <Link className="taskbar-item" to="/projects">Projects</Link>
-        <Link className="taskbar-item" to="/contact">Contact</Link>
+        <NavLink 
+          className="taskbar-item" 
+          to="/" 
+          end 
+          activeClassName="active"
+        >
+          Home
+        </NavLink>
+        <NavLink 
+          className="taskbar-item" 
+          to="/about" 
+          activeClassName="active"
+        >
+          About
+        </NavLink>
+        <NavLink 
+          className="taskbar-item" 
+          to="/projects" 
+          activeClassName="active"
+        >
+          Projects
+        </NavLink>
+        <NavLink 
+          className="taskbar-item" 
+          to="/contact" 
+          activeClassName="active"
+        >
+          Contact
+        </NavLink>
 
       </div>
     </div>
