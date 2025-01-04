@@ -1,0 +1,139 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  color: white;
+  background-color: rgba(99, 99, 94, 0.108);
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Title Section */
+#title {
+  text-align: center;
+  background-color: black;
+  color: rgb(189, 189, 188);
+  padding: 20px 0;
+  font-size: 2rem;
+  font-family: "Tahoma", sans-serif;
+}
+
+/* About Page Content */
+.about-container {
+  flex: 1; /* Fills available space between header and taskbar */
+  padding: 30px 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  position: relative;
+  padding-bottom: 80px; /* Space for the fixed taskbar */
+}
+
+/* About Page Text */
+.about-container h1 {
+  color: #00bfff;
+  margin-bottom: 20px;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.about-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Skills Section */
+.skills-section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 15px;
+}
+
+.skills-section li {
+  background-color: #1e1e1e;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.skills-section li:hover {
+  background-color: #444;
+  transform: translateY(-3px);
+}
+
+/* Fun Facts Section */
+.fun-facts-section ul {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.fun-facts-section ul li {
+  margin-bottom: 10px;
+}
+
+/* Taskbar */
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  background-color: rgba(7, 7, 7, 0.879);
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  z-index: 10; /* Ensure it stays on top of other elements */
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.5); /* Optional shadow for separation */
+}
+
+.taskbar-item {
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.taskbar-item:hover {
+  background-color: rgb(81, 19, 8);
+  border-radius: 5px;
+}
+
+.taskbar-item.active {
+  font-weight: bold;
+  color: #00bfff;
+  text-decoration: underline;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .skills-section ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .taskbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
