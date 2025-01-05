@@ -49,7 +49,8 @@ function App() {
 								<b>Academic Tutor</b>
 								<p></p>
 								<b>Classroom Technology Student Assistant</b>
-								
+								<p></p>
+								<b>Secretary of Women In Technology </b>
 							</p>
 			</div>
       
